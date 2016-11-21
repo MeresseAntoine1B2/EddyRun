@@ -1,0 +1,43 @@
+/*
+##############################################
+############# CLASSES GENERALES ##############
+##############################################
+*/
+.myFont {
+/*    font-family: 'Dosis', sans-serif;*/
+    font-size: 40px;
+    border: 0;
+    margin: 0;
+    hyphens: auto;
+    max-width: 100%;
+}
+.fix-it {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}    
+.text-center {
+    text-align: center;
+}
+.middle-content {
+    display: flex; /* contexte sur le parent */
+    flex-direction: column; /* direction d'affichage verticale */
+    justify-content: center; /* alignement vertical */
+}
+a, a:hover, a:visited {
+    color: inherit;
+}
+/*
+##################################
+#############  ##############
+##################################
+*/
+
+
+
+
+
+
+
+
+
