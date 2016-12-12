@@ -60,6 +60,7 @@ function generer_map(config)
         espacement--
 
     }
+    espacement = 0;
     return map;	
 }
 
