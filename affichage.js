@@ -3,7 +3,7 @@
 var s = Snap("#svgout");
 var air = false;
 var play = true;
-var eddy = s.rect(50,300,50,50,10,10).attr({ fill: 'green' });
+var eddy = s.image("image/eddy1.png", 50, 300, 50, 50);
 var obstacle = s.g();
 
 var saut = function () 
@@ -50,9 +50,11 @@ function creeObstacle(map, groupe, decalage=0)
 	for (var i = 0; i < map.length; i++) 
 	{
 		if (map[i][1] == 1)
-			groupe.add(s.rect(decalage+75*(i+2),300,50,50).attr({fill: 'red' }));
+			groupe.add(s.image("image/poubelle.png", decalage+75*(i+2), 322, 50, 28));
+			//groupe.add(s.rect(decalage+75*(i+2),300,50,50).attr({fill: 'red' }));
 		else if (map[i][1] == 2)
-			groupe.add(s.rect(decalage+75*(i+2),300,50,50).attr({fill: 'blue' }));
+			//groupe.add(s.rect(decalage+75*(i+2),300,50,50).attr({fill: 'blue' }));
+			groupe.add(s.image("image/bonhomme.png", decalage+70*(i+2), 300, 50, 50));
 		else if (map[i][1]==4)
 			groupe.add(s.rect(decalage+75*(i+2),300,5,50).attr({fill: 'yellow' }));
 	}
