@@ -12,3 +12,4 @@ function afficher_map (map) {
 }
 
 afficher_map(map);
+afficher_map(map2);

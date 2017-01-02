@@ -17,7 +17,7 @@ var config = {
     nbColonne : 20,
     nbLigne : 2,
     probObstacle : 0.2,
-    probBridge : 0.1
+    probBridge : 0
 }
 var obstacle = {
     poubelle : [POUBELLE , 1],
@@ -124,6 +124,7 @@ function switchBridge () {
 }
 
 var map = generer_map(config);
+var map2 = generer_map(config);
 
 
 
