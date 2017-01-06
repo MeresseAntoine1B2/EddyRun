@@ -55,8 +55,8 @@ function creeObstacle(map, groupe, decalage=0)
 		else if (map[i][1] == 2)
 			//groupe.add(s.rect(decalage+75*(i+2),300,50,50).attr({fill: 'blue' }));
 			groupe.add(s.image("image/bonhomme.png", decalage+70*(i+2), 300, 50, 50));
-		else if (map[i][1]==4)
-			groupe.add(s.rect(decalage+75*(i+2),300,5,50).attr({fill: 'yellow' }));
+		/**else if (map[i][1]==4)
+			groupe.add(s.rect(decalage+75*(i+2),300,5,50).attr({fill: 'yellow' }));**/
 	}
 }
 
@@ -73,6 +73,7 @@ function animerObstacle(groupe, config, decalage=2220)
 																							animerObstacle(groupe_2, config,640);																	
 																						});
 }
+
 
 
 document.onkeydown = saut;
